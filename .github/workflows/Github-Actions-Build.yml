@@ -46,11 +46,11 @@ jobs:
     - name: Push Docker Image
       run: docker push senthilnata1/github-actions-docker-java-app:0.0.2.Release
 
-    - name: Pull Docker Image
-      run: docker pull senthilnata1/github-actions-docker-java-app:0.0.2.Release
+#    - name: Pull Docker Image
+#      run: docker pull senthilnata1/github-actions-docker-java-app:0.0.2.Release
       
     - name: Deploy to Prod Environment
-      run: docker run -p 5000:5000 github-actions-docker-java-app:0.0.2.Release
+      run: docker run -p 5000:5000 senthilnata1/github-actions-docker-java-app:0.0.2.Release
 
     
       
